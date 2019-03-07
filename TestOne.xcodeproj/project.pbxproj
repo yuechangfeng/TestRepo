@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8623DA3FCE97C150934182BA /* Pods_TestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16274F9BB14E6172CCB5946 /* Pods_TestOne.framework */; };
 		DB5621AC2231034F00ADF67B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5621AB2231034F00ADF67B /* AppDelegate.m */; };
 		DB5621AF2231034F00ADF67B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5621AE2231034F00ADF67B /* ViewController.m */; };
 		DB5621B22231034F00ADF67B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5621B02231034F00ADF67B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BBE062634AF0FB2E7DFCC619 /* Pods-TestOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOne.debug.xcconfig"; path = "Target Support Files/Pods-TestOne/Pods-TestOne.debug.xcconfig"; sourceTree = "<group>"; };
 		DB5621A72231034F00ADF67B /* TestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5621AA2231034F00ADF67B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5621AB2231034F00ADF67B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		DB5621CA2231035200ADF67B /* TestOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5621CE2231035200ADF67B /* TestOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOneUITests.m; sourceTree = "<group>"; };
 		DB5621D02231035200ADF67B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16274F9BB14E6172CCB5946 /* Pods_TestOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA990A538077D3596C160B7 /* Pods-TestOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOne.release.xcconfig"; path = "Target Support Files/Pods-TestOne/Pods-TestOne.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8623DA3FCE97C150934182BA /* Pods_TestOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE4C3B6CBD7B08F14D6D141 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBE062634AF0FB2E7DFCC619 /* Pods-TestOne.debug.xcconfig */,
+				FDA990A538077D3596C160B7 /* Pods-TestOne.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB56219E2231034F00ADF67B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				DB5621C22231035200ADF67B /* TestOneTests */,
 				DB5621CD2231035200ADF67B /* TestOneUITests */,
 				DB5621A82231034F00ADF67B /* Products */,
+				0CE4C3B6CBD7B08F14D6D141 /* Pods */,
+				F1CC62B01F4473D7748D09B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +149,14 @@
 			path = TestOneUITests;
 			sourceTree = "<group>";
 		};
+		F1CC62B01F4473D7748D09B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16274F9BB14E6172CCB5946 /* Pods_TestOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB5621D32231035200ADF67B /* Build configuration list for PBXNativeTarget "TestOne" */;
 			buildPhases = (
+				1C53342B1BFE1E167EC7B3CD /* [CP] Check Pods Manifest.lock */,
 				DB5621A32231034F00ADF67B /* Sources */,
 				DB5621A42231034F00ADF67B /* Frameworks */,
 				DB5621A52231034F00ADF67B /* Resources */,
+				6F4F57B4CBBD4C5C1445267F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C53342B1BFE1E167EC7B3CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F4F57B4CBBD4C5C1445267F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestOne/Pods-TestOne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestOne/Pods-TestOne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestOne/Pods-TestOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB5621A32231034F00ADF67B /* Sources */ = {
@@ -433,11 +502,13 @@
 		};
 		DB5621D42231035200ADF67B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE062634AF0FB2E7DFCC619 /* Pods-TestOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5J4S72CE4;
 				INFOPLIST_FILE = TestOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +521,13 @@
 		};
 		DB5621D52231035200ADF67B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA990A538077D3596C160B7 /* Pods-TestOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5J4S72CE4;
 				INFOPLIST_FILE = TestOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
